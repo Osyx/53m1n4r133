@@ -5,7 +5,10 @@ public class CardPayment {
 		
 	}
 	public CardPayment (Payment paymentDetails) {
-		Payment checked = paymentAuthorization.authorizePayment(paymentDetails);
-		
+		}
+	
+		public 	boolean checkPayment (PaymentDTO payment) {
+			boolean checked = externalSystems.ExternalPaymentAuthorization.authorizePayment(payment);
+		return checked;
 	}
 }

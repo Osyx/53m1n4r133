@@ -11,7 +11,7 @@ public class Payment {
 		this.paymentSuccessful = false;
 		
 		if (paymentDetails.getCard() == true) {
-		CardPayment.authorizePayment
+		paymentSuccessful = CardPayment.authorizePayment(payment); 
 				
 		}
 	}
