@@ -1,8 +1,13 @@
 package model;
 
 public class PaymentCreator {
-	model.Card.CardPayment cardPayment = new model.CardPayment.CardPayment();
+	private model.CardPayment cardPayment = new model.CardPayment();
+	
 	PaymentCreator(){
 		
+	}
+
+	public model.CardPayment getCardPayment() {
+		return cardPayment;
 	}
 }
