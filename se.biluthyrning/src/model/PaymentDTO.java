@@ -1,14 +1,13 @@
 package model;
 
 public class PaymentDTO {
-	private Boolean card;
+	private boolean card;
 	private int ammount;
 	private int cardNumber;
 	private int cvc;
 	private int expiry;
 	private int code;
 	private String cardHolder;
-	private Boolean paymentComplete;
 	
 	public void paymentDTO(Boolean card, int ammount, int cardNumber, int cvc, int expiry, int code, String cardHolder){
 		this.card = card;
@@ -20,7 +19,7 @@ public class PaymentDTO {
 		this.cardHolder = cardHolder;
 	}
 	
-	public Boolean getCard(){
+	public boolean getCard(){
 		return this.card;
 	}
 	
@@ -46,9 +45,5 @@ public class PaymentDTO {
 	
 	public String getCardHolder(){
 		return this.cardHolder;
-	}
-	
-	public Boolean getPaymentComplete(){
-		return this.paymentComplete;
 	}
 }
