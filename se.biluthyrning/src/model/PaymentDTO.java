@@ -8,7 +8,6 @@ public class PaymentDTO {
 	private int expiry;
 	private int code;
 	private String cardHolder;
-	private Boolean paymentComplete;
 	
 	public void paymentDTO(Boolean card, int ammount, int cardNumber, int cvc, int expiry, int code, String cardHolder){
 		this.card = card;
@@ -46,9 +45,5 @@ public class PaymentDTO {
 	
 	public String getCardHolder(){
 		return this.cardHolder;
-	}
-	
-	public Boolean getPaymentComplete(){
-		return this.paymentComplete;
 	}
 }
