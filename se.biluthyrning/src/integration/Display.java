@@ -4,7 +4,7 @@ class Display {
   private int currentNumber = 0;
   
   Display(){
-	  this.currentNumber = currentNumber;
+	  
   }
   
   void displayNextNumber(){
