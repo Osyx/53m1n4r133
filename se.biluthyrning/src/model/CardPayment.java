@@ -4,7 +4,7 @@ public class CardPayment {
 	public CardPayment() {
 		
 	}
-	public cardPayment (Payment paymentDetails) {
+	public CardPayment (Payment paymentDetails) {
 		Payment checked = paymentAuthorization.authorizePayment(paymentDetails);
 		
 	}
