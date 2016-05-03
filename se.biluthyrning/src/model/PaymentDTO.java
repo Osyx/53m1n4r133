@@ -1,7 +1,7 @@
 package model;
 
 public class PaymentDTO {
-	private Boolean card;
+	private boolean card;
 	private int ammount;
 	private int cardNumber;
 	private int cvc;
@@ -19,7 +19,7 @@ public class PaymentDTO {
 		this.cardHolder = cardHolder;
 	}
 	
-	public Boolean getCard(){
+	public boolean getCard(){
 		return this.card;
 	}
 	
