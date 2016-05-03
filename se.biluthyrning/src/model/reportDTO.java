@@ -2,7 +2,7 @@ package model;
 import java.util.*;
 
 public class reportDTO{
-	private List<String> reportList = new List<>;
+	List<String> reportList = new ArrayList<>();
 	
 	public void createNewReport(List<String> resultList){
 		
