@@ -1,6 +1,6 @@
 package dbHandler;
 
-public class PaymentRegistry {
+class PaymentRegistry {
 	
 	PaymentRegistry(){
 		
