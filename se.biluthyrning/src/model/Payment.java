@@ -10,8 +10,10 @@ public class Payment {
 		this.change = 0;
 		this.paymentSuccessful = false;
 		
-		if (paymentDetails.getCard() = true) {
-			
+		if (paymentDetails.getCard() == true) {
+		Card.authorizePayment
+				
 		}
 	}
 }
+
