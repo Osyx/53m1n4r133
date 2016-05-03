@@ -1,6 +1,6 @@
 package dbHandler;
 
-public class InspectionRegistry {
+class InspectionRegistry {
 	
 	InspectionRegistry(InspectionResult inspectionResult){
 		

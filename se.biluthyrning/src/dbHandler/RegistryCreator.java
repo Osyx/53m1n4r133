@@ -1,19 +1,19 @@
 package dbHandler;
 
 public class RegistryCreator {
-	PaymentRegistry paymentRegistry = new PaymentRegistry();
-	InspectionRegistry inspectionRegistry = new InspectionRegistry();
+	private PaymentRegistry paymentRegistry = new PaymentRegistry();
+	private InspectionRegistry inspectionRegistry = new InspectionRegistry();
 	
-	RegistryCreator(){
+	public RegistryCreator(){
 		this.paymentRegistry = new PaymentRegistry();
 		this.inspectionRegistry = new InspectionRegistry();
 	}
 	
-	PaymentRegistry getPaymentRegistry(){ 
+	public PaymentRegistry getPaymentRegistry(){ 
 		return paymentRegistry;
 	}
 	
-	InspectionRegistry getInspectionRegistry(){ 
+	public InspectionRegistry getInspectionRegistry(){ 
 		return inspectionRegistry;
 	}
 }
