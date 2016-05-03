@@ -1,7 +1,7 @@
 package model;
 
-public class Card {
-	public Card() {
+public class CardPayment {
+	public CardPayment() {
 		
 	}
 	public cardPayment (Payment paymentDetails) {
