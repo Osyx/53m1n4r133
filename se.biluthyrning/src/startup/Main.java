@@ -16,7 +16,7 @@ public class Main {
 		View view = new View(controller);
 		
 		while(true)
-			view.DoSomething();
+			view.doSomething();
 		
 	}
 }
