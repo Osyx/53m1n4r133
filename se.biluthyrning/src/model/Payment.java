@@ -6,7 +6,7 @@ package model;
  * and cardpayments to their respective classes.
  */
 public class Payment {
-	private PaymentDTO paymentDetails;
+	
 	private int change = 0;
 	private boolean paymentSuccessful;
 	
@@ -16,16 +16,28 @@ public class Payment {
 	 * Takes @param payment and creates a new object that includes change
 	 * and whether or not the the payment was approved or not.
 	 */
-	public Payment(PaymentDTO payment) {
+	/*public Payment(PaymentDTO payment) {
 		this.paymentDetails = payment;
 		this.setChange(0);
 		this.paymentSuccessful = false;
 		
 		if (paymentDetails.getCard() == true) {
 			
-			setPaymentSuccessful(payment); 
+			setPaymentSuccessful(payment);
+			Receipt receipt = new Receipt(this);
 				
 		}
+	}*/
+	public Receipt initializePayment(PaymentDTO payment) {
+		if (paymentDetails.getCard() == true) {
+			CardPayment cardPayment = new CardPayment(paymentDetails);
+			Receipt cardReceipt = new Receipt(cardPayment);
+			return cardReceipt;
+		}
+		else {
+			Receipt cashReceipt = new Receipt();
+			return (cashReceipt);
+			}
 	}
 /**
  *  
