@@ -1,6 +1,7 @@
 package controller;
 
 import dbHandler.RegistryCreator;
+import model.Inspection;
 import integration.*;
 import model.ReportDTO;
 import model.PaymentDTO;
@@ -39,8 +40,8 @@ public class Controller {
 	/**
 	 * 
 	 */
-	public void newInspection(String regNumber){
-		
+	public void newInspection(String regnr){
+		Inspection inspection = new Inspection(regnr);
 	}
 	
 	/**

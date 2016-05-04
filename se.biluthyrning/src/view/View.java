@@ -13,12 +13,14 @@ public class View {
 	}	
 	
 	public void doSomething(){
+		System.out.println("INITIATING CAR INSPECTION");
 		userInput.nextLine();
 		nextQueueNumber();
 		
 		userInput.nextLine();
 		closeDoor();
 		
+		System.out.println("\nRegistration Number?");
 		controller.newInspection(userInput.nextLine());
 		
 		

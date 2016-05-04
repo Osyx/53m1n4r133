@@ -2,7 +2,7 @@ package externalSystems;
 import java.util.*;
 
 public class ExternalInspectionDatabase {
-	static List<String> inspectionObjects = new ArrayList<>();
+	static List<String> inspectionObjects;
 	
 	/**
 	 * This is just a pseudo-database. It will NOT return any results based on the actual registration number of the car. The return list will be the same for all parameters.
@@ -11,6 +11,7 @@ public class ExternalInspectionDatabase {
 	 * @return inspectionObjects will contain the objects for the inspector to inspect.
 	 */
 	public static List<String> getInspectionInstructions(String regnr){
+		inspectionObjects = new ArrayList<>();
 		addInspectionItemsToList(regnr);
 		System.out.println("Debug:" + inspectionObjects);
 		return inspectionObjects;
@@ -22,16 +23,16 @@ public class ExternalInspectionDatabase {
 	 * 
 	 */
 	public static void addInspectionItemsToList(String regnr){
-		inspectionObjects.add("Ignition: Does the car even start?");
-		if(randomToAdd() == 1)	inspectionObjects.add("Seat belts: Inspect for proper operation and anchorage.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Brakes: Remove one of the front wheels and check the condition of the disc brake pads.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Steering: Check the condition of the front end assembly.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Tires: Check the tread depth, tire condition and tire pressure.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Lights: Make sure that all the lights are working correctly.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Windshield: Inspect for cracks. Shouldn´t be longer than 11 inches.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Horn: Check mounting and operation.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Mirrors: Check mirror locations for proper mounting, cracks, breaks, and/or discoloration.");
-		if(randomToAdd() == 1)	inspectionObjects.add("Fuel Leaks: Make sure that there is no fuel leak.");
+		inspectionObjects.add("\nIgnition: Does the car even start?");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nSeat belts: Inspect for proper operation and anchorage.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nBrakes: Remove one of the front wheels and check the condition of the disc brake pads.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nSteering: Check the condition of the front end assembly.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nTires: Check the tread depth, tire condition and tire pressure.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nLights: Make sure that all the lights are working correctly.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nWindshield: Inspect for cracks. Shouldn´t be longer than 11 inches.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nHorn: Check mounting and operation.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nMirrors: Check mirror locations for proper mounting, cracks, breaks, and/or discoloration.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nFuel Leaks: Make sure that there is no fuel leak.");
 	}
 	
 	/**
@@ -40,7 +41,7 @@ public class ExternalInspectionDatabase {
 	 */
 	public static int randomToAdd(){
 		Random rn = new Random();
-		int answer = rn.nextInt(1);
+		int answer = rn.nextInt(2);
 		return answer;
 	}
 }
