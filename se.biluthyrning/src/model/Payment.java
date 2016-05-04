@@ -9,20 +9,23 @@ public class Payment {
 	public Payment(PaymentDTO payment) {
 		this.paymentDetails = payment;
 		this.setChange(0);
-		this.setPaymentSuccessful(false);
+		this.paymentSuccessful = false;
 		
 		if (paymentDetails.getCard() == true) {
-		setPaymentSuccessful(cardPayment.checkPayment(payment)); 
+			setPaymentSuccessful(payment); 
 				
 		}
 	}
-
+/**
+ * 
+ * @return whether or not the payment is succesful or not
+ */
 	public boolean isPaymentSuccessful() {
 		return paymentSuccessful;
 	}
 
-	private void setPaymentSuccessful(boolean paymentSuccessful) {
-		this.paymentSuccessful = paymentSuccessful;
+	private void setPaymentSuccessful(PaymentDTO paymentDetails) {
+		this.paymentSuccessful = cardPayment.checkPayment(paymentDetails);
 	}
 
 	public int getChange() {
