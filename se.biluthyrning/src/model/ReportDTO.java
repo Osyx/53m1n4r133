@@ -4,7 +4,7 @@ import java.util.*;
 public class ReportDTO{
 	List<String> reportList = new ArrayList<>();
  	
- 	public ReportDTO(){
+ 	public ReportDTO(List<String> resultList){
  		
  	}
  	
