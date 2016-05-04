@@ -13,7 +13,7 @@ public class ExternalInspectionDatabase {
 	public static List<String> getInspectionInstructions(String regnr){
 		inspectionObjects = new ArrayList<>();
 		addInspectionItemsToList(regnr);
-		System.out.println(inspectionObjects);
+		System.out.println("List of objects to inspect: \ninspectionObjects);
 		return inspectionObjects;
 	}
 	
@@ -23,7 +23,7 @@ public class ExternalInspectionDatabase {
 	 * 
 	 */
 	public static void addInspectionItemsToList(String regnr){
-		inspectionObjects.add("\nIgnition: Does the car even start?");
+		inspectionObjects.add("Ignition: Does the car even start?");
 		if(randomToAdd() < 1)	inspectionObjects.add("\nSeat belts: Inspect for proper operation and anchorage");
 		if(randomToAdd() < 1)	inspectionObjects.add("\nBrakes: Remove one of the front wheels and check the condition of the disc brake pads");
 		if(randomToAdd() < 1)	inspectionObjects.add("\nSteering: Check the condition of the front end assembly");
