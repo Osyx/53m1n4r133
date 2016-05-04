@@ -11,7 +11,8 @@ public class ExternalInspectionDatabase {
 	}
 	
 	/**
-	 * This is just a pseudo-database. It will NOT return any results 
+	 * This is just a pseudo-database. It will NOT return any results based on the actual registration number of the car. The return list will be the same for all parameters.
+	 *
 	 * @param regnr will not be used in this test
 	 */
 	public static void addInspectionItemsToList(String regnr){
