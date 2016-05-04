@@ -8,16 +8,25 @@ package model;
  */
 public class PaymentDTO {
 	private boolean card;
-	private int ammount;
+	private int amount;
 	private int cardNumber;
 	private int cvc;
 	private int expiry;
 	private int code;
 	private String cardHolder;
-	
-	public void paymentDTO(Boolean card, int ammount, int cardNumber, int cvc, int expiry, int code, String cardHolder){
+	/**
+	 * Construtor for the DTO
+	 * @param card 			Specifies whether or not the customer is paying with a Credit Card.
+	 * @param amount 		The amount that the customer has to pay 
+	 * @param cardNumber 	The Card Number of the customer's card
+	 * @param cvc 			The CVC code belonging to the card
+	 * @param expiry 		The expiry date of the card
+	 * @param code 			The code that the customer entered
+	 * @param cardHolder	The name of the cardholder
+	 */
+	public void paymentDTO(Boolean card, int amount, int cardNumber, int cvc, int expiry, int code, String cardHolder){
 		this.card = card;
-		this.ammount = ammount;
+		this.amount = amount;
 		this.cardNumber = cardNumber;
 		this.cvc = cvc;
 		this.expiry = expiry;
@@ -29,8 +38,8 @@ public class PaymentDTO {
 		return this.card;
 	}
 	
-	public int getammount(){
-		return this.ammount;
+	public int getamount(){
+		return this.amount;
 	}
 	
 	public int getCardNumber(){
