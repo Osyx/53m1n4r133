@@ -12,7 +12,7 @@ public class Garage {
 		garageDoor.closeDoor();
 	}
 	
-	public void nextQueueNumber(){
+	public void nextCustomer(){
 		garageDoor.openGarageDoor();
 		display.displayNextNumber();
 	}

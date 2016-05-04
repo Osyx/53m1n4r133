@@ -6,6 +6,6 @@ public class Printer {
 	}
 	
 	public void Print(String obj){
-		
+		System.out.println("Debug: Printing " + obj);
 	}
 }

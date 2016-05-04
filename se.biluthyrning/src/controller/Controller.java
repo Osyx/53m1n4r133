@@ -47,14 +47,14 @@ public class Controller {
 	 * 
 	 */
 	public void nextQueueNumber(){
-		
+		garage.nextCustomer();
 	}
 	
 	/**
 	 * 
 	 */
 	public void closeDoor(){
-		
+		garage.closeDoor();
 	}
 
 }
