@@ -25,7 +25,6 @@ public class View {
 		controller.newInspection(userInput.nextLine());
 		
 		
-		
 	}
 	
 	public void nextQueueNumber(){

@@ -7,8 +7,6 @@ import dbHandler.RegistryCreator;
 
 public class Main {
 	public static void main(String[] args){
-		
-		
 		RegistryCreator registryCreator = new RegistryCreator();
 		Printer printer = new Printer();
 		Garage garage = new Garage();
