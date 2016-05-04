@@ -2,6 +2,7 @@ package controller;
 
 import dbHandler.RegistryCreator;
 import model.Inspection;
+import model.InspectionResult;
 import integration.*;
 import model.ReportDTO;
 import model.PaymentDTO;
@@ -20,8 +21,9 @@ public class Controller {
 		
 	}
 	
-	public void handleResults(ReportDTO reportDTO){
-		
+	public void handleResult(ReportDTO reportDTO){
+		InspectionResult inspectionResult = new InspectionResult(reportDTO);
+		printer.print(inspectionResult);
 	}
 	
 	public void payment(PaymentDTO paymentDTO){
