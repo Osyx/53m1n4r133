@@ -1,6 +1,8 @@
 package view;
+import java.util.*;
 
 public class View {
-	system.out.println("This is just a test.")
-
+	public void view(){
+		
+	}
 }
