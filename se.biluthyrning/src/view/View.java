@@ -1,7 +1,7 @@
 package view;
 import java.util.Scanner;
-
 import controller.Controller;
+import model.Inspection;
 
 public class View {
 	
@@ -15,8 +15,14 @@ public class View {
 	public void doSomething(){
 		userInput.nextLine();
 		nextQueueNumber();
+		
 		userInput.nextLine();
 		closeDoor();
+		
+		controller.newInspection(userInput.nextLine());
+		
+		
+		
 	}
 	
 	public void nextQueueNumber(){

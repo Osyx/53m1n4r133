@@ -14,6 +14,7 @@ public class Inspection {
 		List <String> inspectionList = externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr);
 		this.setCost(calculateCost(inspectionList));
 	}
+	
 	/**
 	 *  Calculates the cost of inspection based on the things we need to inspect.
 	 *  
@@ -29,30 +30,16 @@ public class Inspection {
 		return costOfInspection;
 		
 	}
-	/**
-	 * @return	The total cost of the inspection
-	 */
 	public int getCost() {
 		return cost;
 	}
 	
-	/**
-	 * @param cost 		Cost to set
-	 */
 	private void setCost(int cost) {
 		this.cost = cost;
 	}
-	/**
-	 * @return	the regnr of the car inspected
-	 */
 	public String getRegnr() {
 		return regnr;
 	}
-	
-	/**
-	 * 
-	 * @param regnr Sets the regnr for the that is inspected.
-	 */
 	private void setRegnr(String regnr) {
 		this.regnr = regnr;
 	}

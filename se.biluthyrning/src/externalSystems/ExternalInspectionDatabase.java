@@ -11,7 +11,8 @@ public class ExternalInspectionDatabase {
 	 * @return inspectionObjects will contain the objects for the inspector to inspect.
 	 */
 	public static List<String> getInspectionInstructions(String regnr){
-		
+		addInspectionItemsToList(regnr);
+		System.out.println("Debug:" + inspectionObjects);
 		return inspectionObjects;
 	}
 	
