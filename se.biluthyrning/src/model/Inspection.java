@@ -15,10 +15,11 @@ public class Inspection {
 		this.setCost(calculateCost(inspectionList));
 	}
 	/**
-	 * 
-	 * @param inspectionList
-	 * @return
-	 * Calculates the cost of inspection
+	 *  Calculates the cost of inspection based on the things we need to inspect.
+	 *  
+	 * @param inspectionList 	List of the things we need to inspect on the car
+	 * @return					The total cost of the inspection
+	 *
 	 */
 	private int calculateCost(List <String> inspectionList) {
 		int costOfInspection = 0;
