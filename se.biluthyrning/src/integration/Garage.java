@@ -7,6 +7,7 @@ public class Garage {
 	public Garage(){
 		
 	}
+	
 	public void closeDoor(){
 		garageDoor.closeDoor();
 	}

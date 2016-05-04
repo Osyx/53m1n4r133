@@ -1,11 +1,10 @@
 package view;
-
-import controller.Controller;
+import java.util.*;
 
 public class View {
-	Controller controller;
-	
-	public View(Controller controller){
-		this.controller = controller;
+	public void view(){
+		
 	}
+	
+	
 }
