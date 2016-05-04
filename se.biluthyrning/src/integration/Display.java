@@ -9,8 +9,7 @@ class Display {
   
   void displayNextNumber(){
 	  if (++currentNumber > 999)
-		  currentNumber = 0;
-	  currentNumber++;
+		  currentNumber = 1;
 	  System.out.println("Debug: Current number: " + currentNumber);
   }
 } 

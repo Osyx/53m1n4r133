@@ -15,9 +15,15 @@ public class View {
 	public void doSomething(){
 		userInput.nextLine();
 		nextQueueNumber();
+		userInput.nextLine();
+		closeDoor();
 	}
 	
 	public void nextQueueNumber(){
+		controller.nextQueueNumber();
+	}
+	
+	public void closeDoor(){
 		controller.closeDoor();
 	}
 }

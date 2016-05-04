@@ -3,18 +3,22 @@ package integration;
 class Garagedoor {
 	private boolean open = false;
 	
+	private void setOpen(boolean open) {
+		this.open = open;
+	}
+
 	Garagedoor(){
 		
 	}
 	
 	void closeDoor(){
-		open = false;
-		System.out.println("Debug: Door open = " + open);
+		setOpen(false);
+		System.out.println("Debug: Door open = " + getCurrentState());
 	}
 	
 	void openGarageDoor(){
-		open = true;
-		System.out.println("Debug: Door open = " + open);
+		setOpen(true);
+		System.out.println("Debug: Door open = " + getCurrentState());
 	}
 	
 	boolean getCurrentState(){
