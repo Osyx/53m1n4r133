@@ -24,15 +24,15 @@ public class ExternalInspectionDatabase {
 	 */
 	public static void addInspectionItemsToList(String regnr){
 		inspectionObjects.add("\nIgnition: Does the car even start?");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nSeat belts: Inspect for proper operation and anchorage.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nBrakes: Remove one of the front wheels and check the condition of the disc brake pads.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nSteering: Check the condition of the front end assembly.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nTires: Check the tread depth, tire condition and tire pressure.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nLights: Make sure that all the lights are working correctly.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nWindshield: Inspect for cracks. Shouldn´t be longer than 11 inches.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nHorn: Check mounting and operation.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nMirrors: Check mirror locations for proper mounting, cracks, breaks, and/or discoloration.");
-		if(randomToAdd() < 1)	inspectionObjects.add("\nFuel Leaks: Make sure that there is no fuel leak.");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nSeat belts: Inspect for proper operation and anchorage");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nBrakes: Remove one of the front wheels and check the condition of the disc brake pads");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nSteering: Check the condition of the front end assembly");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nTires: Check the tread depth, tire condition and tire pressure");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nLights: Make sure that all the lights are working correctly");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nWindshield: Inspect for cracks. Shouldn´t be longer than 11 inches");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nHorn: Check mounting and operation");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nMirrors: Check mirror locations for proper mounting, cracks, breaks, and/or discoloration");
+		if(randomToAdd() < 1)	inspectionObjects.add("\nFuel Leaks: Make sure that there is no fuel leak");
 	}
 	
 	/**
