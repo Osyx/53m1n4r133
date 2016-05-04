@@ -9,7 +9,7 @@ public class ReportDTO{
  	}
  	
  	public void createNewReport(List<String> resultList){
- 		
+ 		reportList = resultList;
  	}
  	
  	public List<String> getReportList(){

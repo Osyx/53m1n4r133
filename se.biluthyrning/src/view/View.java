@@ -10,7 +10,6 @@ public class View {
 	
 	List<String> resultList = new ArrayList<>();
 	Controller controller;
-	ReportDTO reportDTO;
 	Inspection inspection;
 	Scanner userInput = new Scanner(System.in);
 	
@@ -47,13 +46,16 @@ public class View {
 		controller.handleResult(reportDTO);
 	}
 	
-	private void makeNewReport(){
+	private ReportDTO makeNewReport(){
 		int listIndex = 0;
-		for(int i = inspection.getInspectionList().size() ; i > 0 ; i++){
+		for(int i = inspection.getInspectionList().size() ; i > 0 ; i--){
 			resultList.add(inspection.getInspectionList().get(listIndex));
 			resultList.add(userInput.nextLine());
+			listIndex++;
 		}
-		reportDTO.createNewReport(resultList);
+		System.out.println("Created resultList" + resultList);
+		ReportDTO reportDTO = new ReportDTO(resultList);
+		return reportDTO;
 	}
 
 }
