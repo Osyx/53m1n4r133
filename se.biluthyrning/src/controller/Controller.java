@@ -4,7 +4,6 @@ import dbHandler.RegistryCreator;
 import integration.*;
 import model.ReportDTO;
 import model.PaymentDTO;
-import model.Inspection;
 
 public class Controller {
 	RegistryCreator registryCreator;
