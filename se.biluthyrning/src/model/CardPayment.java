@@ -18,7 +18,8 @@ public class CardPayment {
 	 * This method serves as the interaction method with the ExternPaymentAuthorization
 	 * and checks whether or not it is approves the card details the customer has
 	 * provided.
-	 * @return true for a payment that has been approved, otherwise false.
+	 * @return <code>true</code> for a payment that has been approved.
+	 * 		   <code>false</code> if the payment request is denied.
 	 */
 	private boolean approvePayment(PaymentDTO paymentDetails) {
 		return externalSystems.ExternalPaymentAuthorization.authorizePayment(paymentDetails);

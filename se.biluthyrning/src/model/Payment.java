@@ -1,5 +1,10 @@
 package model;
-
+/**
+ * 
+ * @author Silver
+ * The purpose of this class is to delegate responsibility for cash-
+ * and cardpayments to their respective classes.
+ */
 public class Payment {
 	private PaymentDTO paymentDetails;
 	private int change = 0;
@@ -23,7 +28,7 @@ public class Payment {
 		}
 	}
 /**
- * This method 
+ *  
  * @return The status of the payment
  */
 	public boolean isPaymentSuccessful() {

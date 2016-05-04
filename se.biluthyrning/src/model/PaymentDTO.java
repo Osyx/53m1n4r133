@@ -1,5 +1,11 @@
 package model;
 
+/**
+ * 
+ * This class encapsulates the payment details provided by the customer, which will then
+ * serve as a vessel as it travels across the system.
+ *
+ */
 public class PaymentDTO {
 	private boolean card;
 	private int ammount;
