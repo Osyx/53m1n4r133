@@ -12,8 +12,12 @@ public class Controller {
 	Printer printer;
 	Garage garage;
 	
-	
-	
+	/**
+	 * <code>Controller</code> is the constructor for <code>Controller</code>.
+	 * @param registryCreator is the creator of the databases.
+	 * @param printer is the instance of the printer.
+	 * @param garage is the instance of the garage.
+	 */
 	public Controller(RegistryCreator registryCreator, Printer printer, Garage garage){
 		this.registryCreator = registryCreator;
 		this.printer = printer;
@@ -21,6 +25,10 @@ public class Controller {
 		
 	}
 	
+	/**
+	 * <code>handleResult</code> will create a new instance of InspectionResult using reportDTO. 
+	 * @param reportDTO contains the results of the inspection.
+	 */
 	public void handleResult(ReportDTO reportDTO){
 		InspectionResult inspectionResult = new InspectionResult(reportDTO);
 		printer.print(inspectionResult);
