@@ -12,6 +12,6 @@ public class Printer {
 	 * @param obj the object we want to print.
 	 */
 	public void Print(String obj){
-		System.out.println("Debug: Printing " + obj);
+		System.out.println("Printing" + obj);
 	}
 }
