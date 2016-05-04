@@ -12,9 +12,9 @@ public class ExternalInspectionDatabase {
 	 */
 	public static List<String> getInspectionInstructions(String regnr){
 		
-		addInspectionItemsToList(regnr);
 		return inspectionObjects;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * <code>addInspectionItemsToList</code> will add a random ammount of inspection objects to the returned list.
@@ -44,3 +44,7 @@ public class ExternalInspectionDatabase {
 		return answer;
 	}
 }
+=======
+
+}
+>>>>>>> branch 'master' of https://github.com/Osyx/53m1n4r133.git
