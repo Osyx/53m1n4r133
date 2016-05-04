@@ -14,7 +14,7 @@ public class View {
 	
 	public void doSomething(){
 		System.out.println("INITIATING CAR INSPECTION");
-		System.out.println("Time for a new customer?");
+		System.out.println("\nTime for a new customer?");
 		userInput.nextLine();
 		nextQueueNumber();
 		
