@@ -6,7 +6,11 @@ package model;
 public class CardPayment {
 	boolean approval;
 	
-
+/**
+ * Creates an instance of CardPayment containing the information on whether 
+ * or not it was approved
+ * @param paymentDetails	Contains the details relating to the transaction
+ */
 	public CardPayment (PaymentDTO paymentDetails) {
 		this.approval = approvePayment(paymentDetails);
 	}
