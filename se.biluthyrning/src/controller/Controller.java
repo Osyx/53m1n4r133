@@ -36,12 +36,19 @@ public class Controller {
 		InspectionResult inspectionResult = new InspectionResult(reportDTO);
 		printer.print(inspectionResult);
 	}
-	
-	public void payment(PaymentDTO paymentDetails) {
+	/**
+	 * <code>payment</code> will initialize a new payment from
+	 * the customer, creating the receipt and print it.
+	 * 
+	 * @param paymentDetails includes all the necessary information about
+	 * the transaction that the customer has provided.
+	 */
+	public Payment payment(PaymentDTO paymentDetails) {
 		
 		Payment payment = new Payment(paymentDetails); 
 		Receipt receipt = new Receipt(payment);
 		printer.print(receipt);
+		return payment;
 	}
 	
 	/**
