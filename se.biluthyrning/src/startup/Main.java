@@ -2,8 +2,6 @@ package startup;
 
 import view.View;
 import controller.Controller;
-import model.Payment;
-import model.PaymentCreator;
 import integration.*;
 import dbHandler.RegistryCreator;
 
