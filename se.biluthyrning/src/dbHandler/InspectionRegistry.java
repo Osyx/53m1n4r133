@@ -8,11 +8,9 @@ class InspectionRegistry {
 		
 	}
 	
-	InspectionResult getInspectionResult(String regNumber){
+	void getInspectionResult(String regNumber){
+		System.out.println("Debug: Returning info about car " + regNumber + " :\n\"Some info\"");
 		
-		InspectionResult inspectionResult = new InspectionResult();
-		
-		return inspectionResult;
 	}
 	
 	 void registerResult(InspectionResult inspectionResult) {
