@@ -30,6 +30,7 @@ public class View {
 		System.out.println("\nRegistration Number?");
 		inspection = controller.newInspection(userInput.nextLine());
 		
+		System.out.println("\nWhat´s the result?");
 		handleResult(makeNewReport());
 		
 		System.out.println();
