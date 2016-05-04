@@ -43,7 +43,7 @@ public class Payment {
 		return change;
 	}
 
-	public void setChange(int change) {
+	private void setChange(int change) {
 		this.change = change;
 	}
 }
