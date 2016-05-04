@@ -1,14 +1,16 @@
 package dbHandler;
 
+import model.InspectionResult;
+
 class InspectionRegistry {
 	
-	InspectionRegistry(InspectionResult inspectionResult){
+	InspectionRegistry(){
 		
 	}
 	
 	InspectionResult getInspectionResult(String regNumber){
 		
-		InspectionsResult inspectionResult;
+		InspectionResult inspectionResult = new InspectionResult();
 		
 		return inspectionResult;
 	}
