@@ -29,8 +29,8 @@ public class Payment {
 		}
 	}*/
 	public Receipt initializePayment(PaymentDTO payment) {
-		if (paymentDetails.getCard() == true) {
-			CardPayment cardPayment = new CardPayment(paymentDetails);
+		if (payment.getCard() == true) {
+			CardPayment cardPayment = new CardPayment(payment);
 			Receipt cardReceipt = new Receipt(cardPayment);
 			return cardReceipt;
 		}
@@ -53,10 +53,10 @@ public class Payment {
 	 * 
 	 * @param paymentDetails which includes the cardholder details
 	 */
-	private void setPaymentSuccessful(PaymentDTO paymentDetails) {
+	/*private void setPaymentSuccessful(PaymentDTO paymentDetails) {
 		CardPayment cardPayment = new CardPayment(paymentDetails);
 		this.paymentSuccessful = cardPayment.getApproval();
-	}
+	}*/
 	/**
 	 * 
 	 * @return the change of the particuar instance of payment.
@@ -64,12 +64,15 @@ public class Payment {
 	public int getChange() {
 		return change;
 	}
-/**
+
+	/**
  * 
  * @param change  Set the <code>change</code>
  */
+	/*
 	private void setChange(int change) {
 		this.change = change;
 	}
+	*/
 }
 
