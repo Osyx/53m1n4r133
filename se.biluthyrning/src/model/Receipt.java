@@ -11,7 +11,7 @@ public class Receipt {
 	/**
 	 * 
 	 */
-	public void(PaymentDTO paymentDTO){
+	public void createReceipt(PaymentDTO paymentDTO){
 		
 	}
 
