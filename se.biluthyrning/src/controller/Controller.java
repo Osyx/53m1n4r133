@@ -47,9 +47,11 @@ public class Controller {
 	/**
 	 * <code>newInspection</code> will initiate a new inspection.
 	 * @param regnr is the registration number of the car.
+	 * @return 
 	 */
-	public void newInspection(String regnr){
+	public Inspection newInspection(String regnr){
 		Inspection inspection = new Inspection(regnr);
+		return inspection;
 	}
 	
 	/**
