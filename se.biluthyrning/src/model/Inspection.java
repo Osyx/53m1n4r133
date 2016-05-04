@@ -4,6 +4,7 @@ import java.util.*;
 public class Inspection {
 	private int cost = 0;
 	private String regnr;
+	List <String> inspectionList;
 	/**
 	 * 
 	 * @param regnr
@@ -11,10 +12,10 @@ public class Inspection {
 	 */
 	public Inspection (String regnr) {
 		this.setRegnr(regnr);
-		List <String> inspectionList = externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr);
+		setInspectionList(externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr));
 		this.setCost(calculateCost(inspectionList));
 	}
-	
+
 	/**
 	 *  Calculates the cost of inspection based on the things we need to inspect.
 	 *  
@@ -44,6 +45,13 @@ public class Inspection {
 		this.regnr = regnr;
 	}
 
+	public List<String> getInspectionList() {
+		return inspectionList;
+	}
+
+	public void setInspectionList(List<String> inspectionList) {
+		this.inspectionList = inspectionList;
+	}
 
 }
 
