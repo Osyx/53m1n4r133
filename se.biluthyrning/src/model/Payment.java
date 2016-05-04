@@ -35,8 +35,8 @@ public class Payment {
 	 * @param paymentDetails
 	 */
 	private void setPaymentSuccessful(PaymentDTO paymentDetails) {
-		CardPayment cardPayment = new CardPayment();
-		this.paymentSuccessful = cardPayment.checkPayment(paymentDetails);
+		CardPayment cardPayment = new CardPayment(paymentDetails);
+		this.paymentSuccessful = cardPayment.getApproval();
 	}
 
 	public int getChange() {
