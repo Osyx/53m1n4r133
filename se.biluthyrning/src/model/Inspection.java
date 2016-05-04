@@ -1,12 +1,15 @@
+package model;
+import externalSystems.ExternalInspectionDatabase;
 import java.util.*;
+
 public class Inspection {
-private int cost = 0;
-private String regnr;
-/**
- * 
- * @param regnr
- * Constructor for inspection object
- */
+	private int cost = 0;
+	private String regnr;
+	/**
+	 * 
+	 * @param regnr
+	 * Constructor for inspection object
+	 */
 	public Inspection (String regnr) {
 		this.regnr = regnr;
 		List <String> inspectionList = getInspectionInstructions(regnr);
