@@ -4,7 +4,7 @@ public class Receipt {
 	/**
 	 * 
 	 */
-	public void Receipt(){
+	public Receipt(){
 		
 	}
 	

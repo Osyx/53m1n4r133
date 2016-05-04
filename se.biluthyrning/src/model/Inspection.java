@@ -1,5 +1,4 @@
 package model;
-import externalSystems.ExternalInspectionDatabase;
 import java.util.*;
 
 public class Inspection {
@@ -11,10 +10,10 @@ public class Inspection {
 	 * Constructor for inspection object
 	 */
 	public Inspection (String regnr) {
-		this.regnr = regnr;
-		List <String> inspectionList = getInspectionInstructions(regnr);
-		this.cost = calculateCost(inspectionList);
-}
+		this.setRegnr(regnr);
+		List <String> inspectionList = externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr);
+		this.setCost(calculateCost(inspectionList));
+	}
 	/**
 	 * 
 	 * @param inspectionList
@@ -28,6 +27,19 @@ public class Inspection {
 			}
 		return costOfInspection;
 		
+	}
+	public int getCost() {
+		return cost;
+	}
+	
+	private void setCost(int cost) {
+		this.cost = cost;
+	}
+	public String getRegnr() {
+		return regnr;
+	}
+	private void setRegnr(String regnr) {
+		this.regnr = regnr;
 	}
 
 

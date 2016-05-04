@@ -1,7 +1,7 @@
 package model;
 
 public class InspectionResult {
-	public void InspectionResult(){
+	public InspectionResult(){
 		
 	}
 	
