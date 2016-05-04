@@ -47,14 +47,14 @@ public class Payment {
 	}
 	/**
 	 * 
-	 * @return the change of the particual instance of payment.
+	 * @return the change of the particuar instance of payment.
 	 */
 	public int getChange() {
 		return change;
 	}
 /**
  * 
- * @param change	Set the change to
+ * @param change  Set the <code>change</code>
  */
 	private void setChange(int change) {
 		this.change = change;
