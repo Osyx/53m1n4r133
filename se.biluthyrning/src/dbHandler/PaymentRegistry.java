@@ -1,5 +1,7 @@
 package dbHandler;
 
+import model.Receipt;
+
 class PaymentRegistry {
 	
 	PaymentRegistry(){
@@ -8,7 +10,7 @@ class PaymentRegistry {
 	
 	Receipt getPayment(){
 		
-		Receipt receipt;
+		Receipt receipt = new Receipt();
 		
 		return receipt;
 	}
