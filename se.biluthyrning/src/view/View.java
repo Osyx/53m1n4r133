@@ -1,7 +1,6 @@
 package view;
 import java.util.Scanner;
 import controller.Controller;
-import model.Inspection;
 
 public class View {
 	
