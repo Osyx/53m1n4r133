@@ -4,17 +4,24 @@ import model.Receipt;
 
 class PaymentRegistry {
 	
+	/**
+	 * Constructor for <code>PaymentRegistry</code>.
+	 */
 	PaymentRegistry(){
 		
 	}
 	
-	Receipt getPayment(){
+	/**
+	 * Searches the database for a previous purchase.
+	 * @param orderNr The purchase we want to search for.
+	 */
+	void getPayment(String orderNr){
 		
-		Receipt receipt = new Receipt();
-		
-		return receipt;
 	}
-	
+	/**
+	 * Saves a payment into the database. 
+	 * @param receipt The payment we want to save.
+	 */
 	void registerPayment(Receipt receipt){
 		
 	}
