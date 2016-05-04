@@ -14,7 +14,7 @@ public class Controller {
 	/**
 	 * 
 	 */
-	public void Controller(PaymentCreator paymentCreator, RegistryCreator registryCreator, Printer printer, Garage garage){
+	public Controller(PaymentCreator paymentCreator, RegistryCreator registryCreator, Printer printer, Garage garage){
 		this.paymentCreator = paymentCreator;
 		this.registryCreator = registryCreator;
 		this.printer = printer;

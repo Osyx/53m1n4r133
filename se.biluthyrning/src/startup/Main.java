@@ -15,7 +15,8 @@ public class Main {
 		Controller controller = new Controller(paymentCreator, registryCreator, printer, garage);
 		View view = new View(controller);
 		
-		
+		while(true)
+			view.DoSomething();
 		
 	}
 }
