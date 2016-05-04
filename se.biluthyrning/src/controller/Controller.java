@@ -2,6 +2,10 @@ package controller;
 import model.PaymentCreator;
 import dbHandler.RegistryCreator;
 import integration.*;
+import model.reportDTO;
+import model.PaymentDTO;
+import model.inspection;
+
 
 public class Controller {
 	PaymentCreator paymentCreator;
@@ -14,7 +18,7 @@ public class Controller {
 	/**
 	 * 
 	 */
-	public Controller(PaymentCreator paymentCreator, RegistryCreator registryCreator, Printer printer, Garage garage){
+	public void Controller(PaymentCreator paymentCreator, RegistryCreator registryCreator, Printer printer, Garage garage){
 		this.paymentCreator = paymentCreator;
 		this.registryCreator = registryCreator;
 		this.printer = printer;
@@ -25,7 +29,7 @@ public class Controller {
 	/**
 	 * 
 	 */
-	public void handleResults(ResultDTO resultDTO){
+	public void handleResults(ReportDTO reportDTO){
 		
 	}
 	
