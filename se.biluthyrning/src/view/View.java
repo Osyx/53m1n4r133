@@ -3,13 +3,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import controller.Controller;
+import model.Inspection;
 import model.ReportDTO;
 
 public class View {
 	
 	List<String> resultList = new ArrayList<>();
 	Controller controller;
-	ReportDTO reportDTO = new ReportDTO(resultList);
+	ReportDTO reportDTO;
+	Inspection inspection;
 	Scanner userInput = new Scanner(System.in);
 	
 	public View(Controller controller) {
@@ -27,7 +29,9 @@ public class View {
 		closeDoor();
 		
 		System.out.println("\nRegistration Number?");
-		controller.newInspection(userInput.nextLine());
+		inspection = controller.newInspection(userInput.nextLine());
+		
+		makeNewReport();
 		
 	}
 	
@@ -43,9 +47,13 @@ public class View {
 		controller.handleResult(reportDTO);
 	}
 	
-	private void creatingResultList(){
-		for(int i = inspection.getInspectionList.length(); i > 0 ; i++)
-		resultList.add(userInput.nextLine());
+	private void makeNewReport(){
+		int listIndex = 0;
+		for(int i = inspection.getInspectionList().size() ; i > 0 ; i++){
+			resultList.add(inspection.getInspectionList().get(listIndex));
+			resultList.add(userInput.nextLine());
+		}
+		reportDTO.createNewReport(resultList);
 	}
 
 }
