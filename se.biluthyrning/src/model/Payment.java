@@ -52,7 +52,10 @@ public class Payment {
 	public int getChange() {
 		return change;
 	}
-
+/**
+ * 
+ * @param change	Set the change to
+ */
 	private void setChange(int change) {
 		this.change = change;
 	}
