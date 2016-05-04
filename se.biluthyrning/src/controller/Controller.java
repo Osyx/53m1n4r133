@@ -2,9 +2,8 @@ package controller;
 import model.PaymentCreator;
 import dbHandler.RegistryCreator;
 import integration.*;
-import model.reportDTO;
+import model.ReportDTO;
 import model.PaymentDTO;
-import model.inspection;
 
 
 public class Controller {

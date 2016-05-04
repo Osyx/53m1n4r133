@@ -1,8 +1,12 @@
 package model;
 import java.util.*;
 
-public class reportDTO{
+public class ReportDTO{
 	List<String> reportList = new ArrayList<>();
+	
+	public ReportDTO(){
+		
+	}
 	
 	public void createNewReport(List<String> resultList){
 		
