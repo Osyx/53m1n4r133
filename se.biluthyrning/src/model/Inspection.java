@@ -29,16 +29,30 @@ public class Inspection {
 		return costOfInspection;
 		
 	}
+	/**
+	 * @return	The total cost of the inspection
+	 */
 	public int getCost() {
 		return cost;
 	}
 	
+	/**
+	 * @param cost 		Cost to set
+	 */
 	private void setCost(int cost) {
 		this.cost = cost;
 	}
+	/**
+	 * @return	the regnr of the car inspected
+	 */
 	public String getRegnr() {
 		return regnr;
 	}
+	
+	/**
+	 * 
+	 * @param regnr Sets the regnr for the that is inspected.
+	 */
 	private void setRegnr(String regnr) {
 		this.regnr = regnr;
 	}
