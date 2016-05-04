@@ -4,10 +4,17 @@ public class Receipt {
 	/**
 	 * 
 	 */
-	public Receipt(){
+	public Receipt() {
 		
 	}
 	
+	public Receipt(Payment payment){
+		
+	}
+	
+	public Receipt(CardPayment payment){
+		
+	}
 	/**
 	 * 
 	 */

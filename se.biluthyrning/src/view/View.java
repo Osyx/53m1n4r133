@@ -1,10 +1,15 @@
 package view;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import controller.Controller;
+import model.ReportDTO;
 
 public class View {
 	
+	List<String> resultList = new ArrayList<>();
 	Controller controller;
+	ReportDTO reportDTO = new ReportDTO(resultList);
 	Scanner userInput = new Scanner(System.in);
 	
 	public View(Controller controller) {
@@ -24,7 +29,6 @@ public class View {
 		System.out.println("\nRegistration Number?");
 		controller.newInspection(userInput.nextLine());
 		
-		
 	}
 	
 	public void nextQueueNumber(){
@@ -34,4 +38,10 @@ public class View {
 	public void closeDoor(){
 		controller.closeDoor();
 	}
+	
+	public void handleResult(ReportDTO reportDTO){
+		controller.handleResult(reportDTO);
+	}
+	
+
 }

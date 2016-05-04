@@ -5,6 +5,7 @@ package model;
  */
 public class CardPayment {
 	boolean approval;
+	private PaymentDTO paymentDetails;
 	
 /**
  * Creates an instance of CardPayment containing the information on whether 
@@ -13,6 +14,8 @@ public class CardPayment {
  */
 	public CardPayment (PaymentDTO paymentDetails) {
 		this.approval = approvePayment(paymentDetails);
+		this.paymentDetails = paymentDetails;
+		
 	}
 	
 	public boolean getApproval() {
