@@ -23,22 +23,27 @@ public class Payment {
 		}
 	}
 /**
- * 
- * @return whether or not the payment is successful or not
+ * This method 
+ * @return The status of the payment
  */
 	public boolean isPaymentSuccessful() {
 		return paymentSuccessful;
 	}
 
-	/**
+	/**This method creates a new instance of <code>CardPayment</code> and
+	 * checks whether or not it was approved. It then sets this as the value
+	 * of <code>paymentSuccessful</code>
 	 * 
-	 * @param paymentDetails
+	 * @param paymentDetails which includes the cardholder details
 	 */
 	private void setPaymentSuccessful(PaymentDTO paymentDetails) {
 		CardPayment cardPayment = new CardPayment(paymentDetails);
 		this.paymentSuccessful = cardPayment.getApproval();
 	}
-
+	/**
+	 * 
+	 * @return the change of the particual instance of payment.
+	 */
 	public int getChange() {
 		return change;
 	}
