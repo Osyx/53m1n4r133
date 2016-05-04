@@ -9,36 +9,24 @@ public class Payment {
 	
 	private int change = 0;
 	private boolean paymentSuccessful;
+	private PaymentDTO paymentDetails;
 	
-	
-	/**
+/**
 	 * 
 	 * Takes @param payment and creates a new object that includes change
 	 * and whether or not the the payment was approved or not.
 	 */
-	/*public Payment(PaymentDTO payment) {
-		this.paymentDetails = payment;
+	public Payment(PaymentDTO paymentDetails) {
+		this.paymentDetails = paymentDetails;
 		this.setChange(0);
 		this.paymentSuccessful = false;
 		
 		if (paymentDetails.getCard() == true) {
-			
-			setPaymentSuccessful(payment);
-			Receipt receipt = new Receipt(this);
-				
+			setPaymentSuccessful(paymentDetails);
+
 		}
-	}*/
-	public Receipt initializePayment(PaymentDTO payment) {
-		if (payment.getCard() == true) {
-			CardPayment cardPayment = new CardPayment(payment);
-			Receipt cardReceipt = new Receipt(cardPayment);
-			return cardReceipt;
-		}
-		else {
-			Receipt cashReceipt = new Receipt();
-			return (cashReceipt);
-			}
 	}
+	
 /**
  *  
  * @return The status of the payment
@@ -53,10 +41,10 @@ public class Payment {
 	 * 
 	 * @param paymentDetails which includes the cardholder details
 	 */
-	/*private void setPaymentSuccessful(PaymentDTO paymentDetails) {
+	private void setPaymentSuccessful(PaymentDTO paymentDetails) {
 		CardPayment cardPayment = new CardPayment(paymentDetails);
 		this.paymentSuccessful = cardPayment.getApproval();
-	}*/
+	}
 	/**
 	 * 
 	 * @return the change of the particuar instance of payment.
@@ -69,10 +57,10 @@ public class Payment {
  * 
  * @param change  Set the <code>change</code>
  */
-	/*
+
 	private void setChange(int change) {
 		this.change = change;
 	}
-	*/
+	
 }
 

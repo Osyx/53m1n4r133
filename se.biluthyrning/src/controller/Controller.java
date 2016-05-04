@@ -6,11 +6,14 @@ import model.InspectionResult;
 import integration.*;
 import model.ReportDTO;
 import model.PaymentDTO;
+import model.Receipt;
+import model.Payment;
 
 public class Controller {
 	RegistryCreator registryCreator;
 	Printer printer;
 	Garage garage;
+	
 	
 	/**
 	 * <code>Controller</code> is the constructor for <code>Controller</code>.
@@ -34,18 +37,19 @@ public class Controller {
 		printer.print(inspectionResult);
 	}
 	
-	public void payment(PaymentDTO paymentDTO){
+	public void payment(PaymentDTO paymentDetails) {
 		
+		Payment payment = new Payment(paymentDetails); 
+		Receipt receipt = new Receipt(payment);
+		printer.print(receipt);
 	}
 	
 	/**
 	 * <code>newInspection</code> will initiate a new inspection.
 	 * @param regnr is the registration number of the car.
-	 * @return 
 	 */
-	public Inspection newInspection(String regnr){
+	public void newInspection(String regnr){
 		Inspection inspection = new Inspection(regnr);
-		return inspection;
 	}
 	
 	/**

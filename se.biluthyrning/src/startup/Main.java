@@ -13,6 +13,7 @@ public class Main {
 		Controller controller = new Controller(registryCreator, printer, garage);
 		View view = new View(controller);
 		
+		
 		while(true)
 			view.doSomething();
 		
