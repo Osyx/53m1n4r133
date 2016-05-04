@@ -13,7 +13,7 @@ public class ExternalInspectionDatabase {
 	public static List<String> getInspectionInstructions(String regnr){
 		inspectionObjects = new ArrayList<>();
 		addInspectionItemsToList(regnr);
-		System.out.println("Debug:" + inspectionObjects);
+		System.out.println(inspectionObjects);
 		return inspectionObjects;
 	}
 	

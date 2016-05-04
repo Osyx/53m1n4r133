@@ -25,14 +25,14 @@ class Garagedoor {
 	 */
 	void closeDoor(){
 		setOpen(false);
-		System.out.println("Debug: Door open = " + getCurrentState());
+		System.out.println("Door open = " + getCurrentState());
 	}
 	/**
 	 * Opens the door.
 	 */
 	void openGarageDoor(){
 		setOpen(true);
-		System.out.println("Debug: Door open = " + getCurrentState());
+		System.out.println("Door open = " + getCurrentState());
 	}
 	/**
 	 * Returns the current state of the door.

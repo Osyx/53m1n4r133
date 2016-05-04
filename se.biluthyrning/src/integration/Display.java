@@ -19,6 +19,6 @@ class Display {
 	void displayNextNumber(){
 		if (++currentNumber > 999)
 			currentNumber = 1;
-		System.out.println("Debug: Current number: " + currentNumber);
+		System.out.println("Current number: " + currentNumber);
 	}
 } 
