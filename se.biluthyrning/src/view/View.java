@@ -43,5 +43,9 @@ public class View {
 		controller.handleResult(reportDTO);
 	}
 	
+	private void creatingResultList(){
+		for(int i = inspection.getInspectionList.length(); i > 0 ; i++)
+		resultList.add(userInput.nextLine());
+	}
 
 }
