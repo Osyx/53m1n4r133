@@ -7,6 +7,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import main.model.CardPayment;
+import main.model.Payment;
+import main.model.PaymentDTO;
+import main.model.Receipt;
+
 /**
  * @author Silver
  *
@@ -18,15 +23,27 @@ public class ReceiptTest {
 	 */
 	@Test
 	public void testReceipt() {
-		fail("Not yet implemented");
+		PaymentDTO paymentDTO = new PaymentDTO(true, 0, "", 0, 0, 0, "");
+		Payment payment = new Payment(paymentDTO);
+		Receipt receipt = new Receipt(payment);
+		assertEquals("Receipt not created", receipt.isReceiptCreated(), true);
 	}
 
 	/**
 	 * Test method for {@link model.Receipt#Receipt(model.Payment)}.
 	 */
 	@Test
-	public void testReceiptPayment() {
-		fail("Not yet implemented");
+	public void testReceiptForCard() {
+		CardPayment payment = new CardPayment(null);
+		Receipt receipt = new Receipt(payment);
+		assertEquals("Receipt not created", receipt.isReceiptCreated(), true);
 	}
 
+	@Test
+	public void testReceiptCreation() {
+		Receipt receipt = new Receipt();
+		PaymentDTO paymentDTO = new PaymentDTO(true, 0, "", 0, 0, 0, "");
+		receipt.createReceipt(paymentDTO);
+		assertEquals("Receipt not created", receipt.isReceiptCreated(), true);
+	}
 }
