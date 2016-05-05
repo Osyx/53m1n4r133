@@ -76,6 +76,16 @@ public class View {
 		int expiry = 0707;
 		int code = 9435;
 		String cardHolder = "Bruce Wayne";
+		System.out.println("Is this information correct?" + 
+							"\nCard: " + card + 
+							"\nPayment amount: " + amount + 
+							"\nCardnumber: " + cardNumber + 
+							"\nCVC: " + cvc + 
+							"\nExpiry: " + expiry + 
+							"\nCode: " + code +
+							"\nCardholder: " + cardHolder + "\n");
+		userInput.nextLine();
+		
 		PaymentDTO paymentInformation = makePaymentDTO(card, amount, cardNumber, cvc, expiry, code, cardHolder);
 		Payment payment = controller.payment(paymentInformation);
 		if(payment.isPaymentSuccessful() == true)	System.out.println("Payment successful.\n");
