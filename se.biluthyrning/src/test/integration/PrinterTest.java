@@ -12,13 +12,13 @@ import main.model.InspectionResult;
 import main.model.Receipt;
 
 /**
- * @author Oscar
- *
+ * This class tests if the printer works.
  */
 public class PrinterTest {
 
 	/**
 	 * Test method for {@link integration.Printer#Printer()}.
+	 * Tests if the constructor for <code>Printer</code> works.
 	 */
 	@Test
 	public void testPrinter() {
@@ -28,6 +28,7 @@ public class PrinterTest {
 
 	/**
 	 * Test method for {@link integration.Printer#print(model.InspectionResult)}.
+	 * Tests if we can print out our inspection results.
 	 */
 	@Test
 	public void testPrintInspectionResult() {
@@ -39,6 +40,7 @@ public class PrinterTest {
 
 	/**
 	 * Test method for {@link integration.Printer#print(model.Receipt)}.
+	 * Tests if we can print out our receipts.
 	 */
 	@Test
 	public void testPrintReceipt() {
