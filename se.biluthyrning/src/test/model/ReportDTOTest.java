@@ -5,12 +5,13 @@ package test.model;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Test;
 
-/**
- * @author Silver
- *
- */
+import main.model.ReportDTO;
+
 public class ReportDTOTest {
 
 	/**
@@ -18,15 +19,12 @@ public class ReportDTOTest {
 	 */
 	@Test
 	public void testReportDTO() {
-		fail("Not yet implemented");
-	}
-
-	/**
-	 * Test method for {@link model.ReportDTO#createNewReport(java.util.List)}.
-	 */
-	@Test
-	public void testCreateNewReport() {
-		fail("Not yet implemented");
+		List<String> reportList = new ArrayList<>();
+		reportList.add("Not empty");
+		ReportDTO reportDTO = new ReportDTO(reportList);
+		assertNotEquals("ReportDTO not created", reportDTO, null);
+		
+		assertNotEquals("ReportDTO doesn't contains a reportList", reportDTO.getReportList().isEmpty(), true);
 	}
 
 }

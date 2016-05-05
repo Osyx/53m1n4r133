@@ -12,15 +12,9 @@ public class ReportDTO{
 	 * @param resultList The results we want to save into the <code>ReportDTO</code>
 	 */
  	public ReportDTO(List<String> resultList){
- 		
- 	}
- 	/**
- 	 * Setter for <code>reportList</code>.
- 	 * @param resultList The list adress we want instead.
- 	 */
- 	public void createNewReport(List<String> resultList){
  		this.reportList = resultList;
  	}
+ 	
  	/**
  	 * Getter for <code>reportList</code>
  	 * @return reportList
