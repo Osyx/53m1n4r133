@@ -9,13 +9,13 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * @author Joakim
+ * 
  *
  */
 public class ExternalPaymentAuthorizationTest {
 
 	/**
-	 * Test method for {@link externalSystems.ExternalPaymentAuthorization#authorizePayment(model.PaymentDTO)}.
+	 * Test method to make sure that the card provider accepts and authorizes a payment.
 	 */
 	@Test
 	public void testAuthorizePayment() {
