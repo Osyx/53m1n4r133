@@ -1,7 +1,7 @@
 /**
  * 
  */
-package integration;
+package test.integration;
 
 import static org.junit.Assert.*;
 
