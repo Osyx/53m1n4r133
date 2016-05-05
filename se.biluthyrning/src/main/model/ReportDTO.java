@@ -1,6 +1,11 @@
 package main.model;
 import java.util.*;
- 
+ /**
+  * 
+  * This class serves serves the purpose of encapsulating the content in 
+  * which shall serve as the basisfor  <code>InstructionResult</code>
+  *
+  */
 public class ReportDTO{
 	/**
 	 * Contains a list of element, later in the program filled with the results.

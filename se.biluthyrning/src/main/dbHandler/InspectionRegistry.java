@@ -1,6 +1,13 @@
 package main.dbHandler;
 
 import main.model.InspectionResult;
+/**
+ * 
+ * The purpose of this class is to provide a layer between
+ * <code>main</code> and the different registries, making sure
+ * that they are protected. 
+ *
+ */
 
 class InspectionRegistry {
 	/**
