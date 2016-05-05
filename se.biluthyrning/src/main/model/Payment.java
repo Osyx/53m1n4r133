@@ -1,7 +1,6 @@
 package main.model;
 /**
  * 
- * @author Silver
  * The purpose of this class is to delegate responsibility for cash-
  * and card payments to their respective classes.
  */
