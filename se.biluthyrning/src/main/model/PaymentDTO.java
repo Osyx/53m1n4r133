@@ -9,11 +9,12 @@ package main.model;
 public class PaymentDTO {
 	private boolean card;
 	private int amount;
-	private int cardNumber;
+	private String cardNumber;
 	private int cvc;
 	private int expiry;
 	private int code;
 	private String cardHolder;
+	
 	/**
 	 * Construtor for the DTO
 	 * @param card 			Specifies whether or not the customer is paying with a Credit Card.
@@ -24,7 +25,7 @@ public class PaymentDTO {
 	 * @param code 			The code that the customer entered
 	 * @param cardHolder	The name of the cardholder
 	 */
-	public void paymentDTO(Boolean card, int amount, int cardNumber, int cvc, int expiry, int code, String cardHolder){
+	public PaymentDTO(Boolean card, int amount, String cardNumber, int cvc, int expiry, int code, String cardHolder){
 		this.card = card;
 		this.amount = amount;
 		this.cardNumber = cardNumber;
@@ -53,7 +54,7 @@ public class PaymentDTO {
 	 * 
 	 * @return The card number of the customer's card
 	 */
-	public int getCardNumber(){
+	public String getCardNumber(){
 		return this.cardNumber;
 	}
 	/**
