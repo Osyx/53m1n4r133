@@ -1,4 +1,4 @@
-Fpackage main.view;
+package main.view;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -36,7 +36,7 @@ public class View {
 		System.out.println("\nPAYMENT");
 		startPayment();
 		
-		System.out.println("\nWhat´s the result?");
+		System.out.println("\nWhatï¿½s the result?");
 		handleResult(makeNewReport());
 		
 		System.out.println();
