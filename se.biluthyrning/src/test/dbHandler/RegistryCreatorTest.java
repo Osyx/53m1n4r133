@@ -10,13 +10,13 @@ import org.junit.Test;
 import main.dbHandler.RegistryCreator;
 
 /**
- * @author Oscar
- *
+ * This class checks if the registry is created without hickups.
  */
 public class RegistryCreatorTest {
 
 	/**
 	 * Test method for {@link dbHandler.RegistryCreator#RegistryCreator()}.
+	 * Checks if the registry creator is created.
 	 */
 	@Test
 	public void testRegistryCreator() {
@@ -26,6 +26,7 @@ public class RegistryCreatorTest {
 
 	/**
 	 * Test method for {@link dbHandler.RegistryCreator#getPaymentRegistry()}.
+	 * Checks if the payment registry is created.
 	 */
 	@Test
 	public void testGetPaymentRegistry() {
@@ -35,6 +36,7 @@ public class RegistryCreatorTest {
 
 	/**
 	 * Test method for {@link dbHandler.RegistryCreator#getInspectionRegistry()}.
+	 * Checks if the inspection registry is created.
 	 */
 	@Test
 	public void testGetInspectionRegistry() {
