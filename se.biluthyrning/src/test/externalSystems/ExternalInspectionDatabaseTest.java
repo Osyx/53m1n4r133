@@ -1,7 +1,7 @@
 /**
  * 
  */
-package externalSystems;
+package test.externalSystems;
 
 import static org.junit.Assert.*;
 

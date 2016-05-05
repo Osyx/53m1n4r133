@@ -1,7 +1,7 @@
 /**
  * 
  */
-package dbHandler;
+package test.dbHandler;
 
 import static org.junit.Assert.*;
 
