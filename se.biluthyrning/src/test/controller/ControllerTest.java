@@ -14,7 +14,6 @@ import main.dbHandler.RegistryCreator;
 import main.integration.Garage;
 import main.integration.Printer;
 import main.model.Inspection;
-import main.model.InspectionResult;
 import main.model.Payment;
 import main.model.PaymentDTO;
 import main.model.ReportDTO;
