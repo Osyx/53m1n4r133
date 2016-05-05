@@ -37,10 +37,13 @@ public class ControllerTest {
 	 */
 	@Test
 	public void testHandleResult() {
+		List<String> list = new ArrayList<>();
 		RegistryCreator registryCreator = new RegistryCreator();
 		Printer printer = new Printer();
 		Garage garage = new Garage();
 		Controller controller = new Controller(registryCreator, printer, garage);
+		ReportDTO reportDTO = new ReportDTO(list);
+		assertEquals("Couldn't handle results", controller.handleResult(reportDTO), true);
 	}
 
 	/**

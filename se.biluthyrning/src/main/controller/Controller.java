@@ -32,9 +32,14 @@ public class Controller {
 	 * <code>handleResult</code> will create a new instance of InspectionResult using reportDTO. 
 	 * @param reportDTO contains the results of the inspection.
 	 */
-	public void handleResult(ReportDTO reportDTO){
+	public boolean handleResult(ReportDTO reportDTO){
+		boolean resultHandeled = false;
 		InspectionResult inspectionResult = new InspectionResult(reportDTO);
 		printer.print(inspectionResult);
+		resultHandeled = printer.isPrinted();
+		
+		return resultHandeled;
+		
 	}
 	/**
 	 * <code>payment</code> will initialize a new payment from
