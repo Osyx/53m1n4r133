@@ -3,7 +3,7 @@ package main.model;
  * 
  * @author Silver
  * The purpose of this class is to delegate responsibility for cash-
- * and cardpayments to their respective classes.
+ * and card payments to their respective classes.
  */
 public class Payment {
 	
@@ -47,17 +47,16 @@ public class Payment {
 	}
 	/**
 	 * 
-	 * @return the change of the particuar instance of payment.
+	 * @return the change of the particular instance of payment.
 	 */
 	public int getChange() {
 		return change;
 	}
 
 	/**
- * 
- * @param change  Set the <code>change</code>
- */
-
+	 * 
+	 * @param change  Set the <code>change</code>
+	 */
 	private void setChange(int change) {
 		this.change = change;
 	}
