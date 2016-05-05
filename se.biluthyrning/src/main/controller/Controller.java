@@ -49,7 +49,6 @@ public class Controller {
 	 * the transaction that the customer has provided.
 	 */
 	public Payment payment(PaymentDTO paymentDetails) {
-		
 		Payment payment = new Payment(paymentDetails); 
 		Receipt receipt = new Receipt(payment);
 		printer.print(receipt);
