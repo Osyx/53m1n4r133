@@ -17,7 +17,7 @@ public class Payment {
 	 * and whether or not the the payment was approved or not.
 	 */
 	public Payment(PaymentDTO paymentDetails) {
-		this.paymentDetails = paymentDetails;
+		this.setPaymentDetails(paymentDetails);
 		this.setChange(0);
 		this.paymentSuccessful = false;
 		
@@ -60,6 +60,14 @@ public class Payment {
 
 	private void setChange(int change) {
 		this.change = change;
+	}
+
+	public PaymentDTO getPaymentDetails() {
+		return paymentDetails;
+	}
+
+	private void setPaymentDetails(PaymentDTO paymentDetails) {
+		this.paymentDetails = paymentDetails;
 	}
 	
 }

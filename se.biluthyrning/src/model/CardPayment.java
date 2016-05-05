@@ -14,7 +14,7 @@ public class CardPayment {
  */
 	public CardPayment (PaymentDTO paymentDetails) {
 		this.approval = approvePayment(paymentDetails);
-		this.paymentDetails = paymentDetails;
+		this.setPaymentDetails(paymentDetails);
 		
 	}
 	
@@ -31,6 +31,20 @@ public class CardPayment {
 	private boolean approvePayment(PaymentDTO paymentDetails) {
 		return externalSystems.ExternalPaymentAuthorization.authorizePayment(paymentDetails);
 		
+	}
+
+	/**
+	 * @return the paymentDetails
+	 */
+	public PaymentDTO getPaymentDetails() {
+		return paymentDetails;
+	}
+
+	/**
+	 * @param paymentDetails the paymentDetails to set
+	 */
+	private void setPaymentDetails(PaymentDTO paymentDetails) {
+		this.paymentDetails = paymentDetails;
 	}
 
 }
