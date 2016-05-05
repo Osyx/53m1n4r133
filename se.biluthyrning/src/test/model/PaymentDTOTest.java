@@ -9,8 +9,7 @@ import main.model.PaymentDTO;
 import org.junit.Test;
 
 /**
- * @author Silver
- *
+ * Tests if the paymentDTO is working as expected.
  */
 public class PaymentDTOTest {
 

@@ -10,10 +10,14 @@ import org.junit.Test;
 import main.model.Payment;
 import main.model.PaymentDTO;
 
+/**
+ *	Tests the payment class.
+ */
 public class PaymentTest {
 
 	/**
 	 * Test method for {@link main.model.Payment#Payment(main.model.PaymentDTO)}.
+	 * Tests if we're doing the wrong checks during the payment.
 	 */
 	@Test
 	public void testPayment() {
