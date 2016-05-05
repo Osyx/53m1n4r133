@@ -21,4 +21,8 @@ class Display {
 			currentNumber = 1;
 		System.out.println("Current number: " + currentNumber);
 	}
+	
+	int getCurrentNumber(){
+		return currentNumber;
+	}
 } 

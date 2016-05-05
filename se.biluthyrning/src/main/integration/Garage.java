@@ -28,4 +28,12 @@ public class Garage {
 		garageDoor.openGarageDoor();
 		display.displayNextNumber();
 	}
+	
+	public boolean getCurrentState(){
+		return garageDoor.getCurrentState();
+	}
+	
+	public int getCurrentNumber(){
+		return display.getCurrentNumber();
+	}
 }
