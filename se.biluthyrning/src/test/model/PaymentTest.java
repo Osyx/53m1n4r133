@@ -22,6 +22,6 @@ public class PaymentTest {
 		Payment cardPayment = new Payment(cardPaymentDTO);
 		Payment cashPayment = new Payment(cashPaymentDTO);
 		assertNotEquals("Checked with payment auth. if cash was authorized.", cashPayment.isPaymentSuccessful(), true);
-		assertNotEquals("Card has change.", cardPayment.getChange(), 0);
+		assertEquals("Card has change.", cardPayment.getChange(), 0);
 	}
 }
