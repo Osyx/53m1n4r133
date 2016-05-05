@@ -7,6 +7,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import main.dbHandler.RegistryCreator;
+
 /**
  * @author Oscar
  *
@@ -18,7 +20,8 @@ public class RegistryCreatorTest {
 	 */
 	@Test
 	public void testRegistryCreator() {
-		fail("Not yet implemented"); // TODO
+		RegistryCreator registryCreator = new RegistryCreator();
+		assertNotEquals("No registryCreator available", registryCreator, null);
 	}
 
 	/**
@@ -26,7 +29,8 @@ public class RegistryCreatorTest {
 	 */
 	@Test
 	public void testGetPaymentRegistry() {
-		fail("Not yet implemented"); // TODO
+		RegistryCreator registryCreator = new RegistryCreator();
+		assertEquals("Wrong state of door.", registryCreator.getPaymentRegistry(), null);
 	}
 
 	/**
@@ -34,7 +38,8 @@ public class RegistryCreatorTest {
 	 */
 	@Test
 	public void testGetInspectionRegistry() {
-		fail("Not yet implemented"); // TODO
+		RegistryCreator registryCreator = new RegistryCreator();
+		assertEquals("Wrong state of door.", registryCreator.getInspectionRegistry() , null);
 	}
 
 }
