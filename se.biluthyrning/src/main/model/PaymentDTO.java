@@ -46,7 +46,7 @@ public class PaymentDTO {
 	 * 
 	 * @return the amount the customer is paying
 	 */
-	public int getamount(){
+	public int getAmount(){
 		return this.amount;
 	}
 	
