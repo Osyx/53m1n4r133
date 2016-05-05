@@ -14,14 +14,16 @@ class Display {
 	}
 	
 	/**
-	 * Displays the next number on the display.
+	 * Displays the next number on the <code>Display</code>.
 	 */
 	void displayNextNumber(){
 		if (++currentNumber > 999)
 			currentNumber = 1;
 		System.out.println("Current number: " + currentNumber);
 	}
-	
+	/*
+	 * Get the <code>currentNumber</code> the display is showing.
+	 */
 	int getCurrentNumber(){
 		return currentNumber;
 	}

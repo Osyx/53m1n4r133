@@ -50,6 +50,10 @@ public class CardPaymentTest {
 		assertNotEquals("Can not retrieve payment details", transactionInformation, null);
 	}
 	
+	/**
+	 * Creates a dummy DTO for use in the different test methods
+	 * @return A DTO featuring values usable for tests
+	 */
 	private PaymentDTO createPaymentDetails() {
 		boolean card = false;
 		int amount = 1000;

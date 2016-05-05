@@ -23,10 +23,10 @@ public class PaymentDTOTest {
 		assertNotEquals("No paymentDTO was created", paymentDTO, null);
 	}
 /**
- * Test method for making sure that we can't enter <code>cardNumber</code> with incorrect number of digits
+ * Test method to make sure that we can't enter <code>cardNumber</code> with incorrect number of digits
  */
 	@Test
-	public void testIncorrectNumbersForCardNumber()  {
+	public void testIncorrectNumbersofDigitsForCardNumber()  {
 		boolean card = false;
 		int amount = 1000;
 		String cardNumber = "4854";

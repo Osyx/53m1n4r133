@@ -4,7 +4,6 @@
 package test.externalSystems;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
@@ -14,19 +13,16 @@ import org.junit.Test;
 public class ExternalInspectionDatabaseTest {
 
 	/**
-	 * Test method for {@link externalSystems.ExternalInspectionDatabase#getInspectionInstructions(java.lang.String)}.
+	 * Test method for getInspectionInstructions. Will test with empty, 6 and 20 numbers/letters.
 	 */
 	@Test
 	public void testGetInspectionInstructions() {
-		fail("Not yet implemented");
-	}
-
-	/**
-	 * Test method for {@link externalSystems.ExternalInspectionDatabase#addInspectionItemsToList(java.lang.String)}.
-	 */
-	@Test
-	public void testAddInspectionItemsToList() {
-		fail("Not yet implemented");
+		String regnr = "";
+		assertEquals("List not recieved from the database.", main.externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr).isEmpty(), false);
+		regnr = "ABC123";
+		assertEquals("List not recieved from the database.", main.externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr).isEmpty(), false);
+		regnr = "BLIXTHALKA0123456789";
+		assertEquals("List not recieved from the database.", main.externalSystems.ExternalInspectionDatabase.getInspectionInstructions(regnr).isEmpty(), false);
 	}
 
 }
