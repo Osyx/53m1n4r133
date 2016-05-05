@@ -7,6 +7,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import main.integration.Printer;
+import main.model.InspectionResult;
+import main.model.Receipt;
+
 /**
  * @author Oscar
  *
@@ -18,7 +22,8 @@ public class PrinterTest {
 	 */
 	@Test
 	public void testPrinter() {
-		fail("Not yet implemented");
+		Printer printer = new Printer();
+		assertNotEquals("Printer not created", printer, null);
 	}
 
 	/**
@@ -26,7 +31,10 @@ public class PrinterTest {
 	 */
 	@Test
 	public void testPrintInspectionResult() {
-		fail("Not yet implemented");
+		Printer printer = new Printer();
+		InspectionResult inspectionResult = new InspectionResult(null);
+		printer.print(inspectionResult);
+		assertEquals("Inspection result didn't get printed", printer.isPrinted() , true);
 	}
 
 	/**
@@ -34,7 +42,10 @@ public class PrinterTest {
 	 */
 	@Test
 	public void testPrintReceipt() {
-		fail("Not yet implemented");
+		Printer printer = new Printer();
+		Receipt receipt = new Receipt();
+		printer.print(receipt);
+		assertEquals("Receipt didn't get printed", printer.isPrinted() , true);
 	}
 
 }

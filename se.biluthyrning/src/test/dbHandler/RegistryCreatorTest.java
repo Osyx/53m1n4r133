@@ -30,7 +30,7 @@ public class RegistryCreatorTest {
 	@Test
 	public void testGetPaymentRegistry() {
 		RegistryCreator registryCreator = new RegistryCreator();
-		assertEquals("Wrong state of door.", registryCreator.getPaymentRegistry(), null);
+		assertNotEquals("Payment registry is nonexistent", registryCreator.getPaymentRegistry(), null);
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class RegistryCreatorTest {
 	@Test
 	public void testGetInspectionRegistry() {
 		RegistryCreator registryCreator = new RegistryCreator();
-		assertEquals("Wrong state of door.", registryCreator.getInspectionRegistry() , null);
+		assertNotEquals("Inspection registry is nonexistent", registryCreator.getInspectionRegistry() , null);
 	}
 
 }
