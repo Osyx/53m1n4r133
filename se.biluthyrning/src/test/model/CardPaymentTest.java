@@ -4,8 +4,8 @@
 package test.model;
 import main.model.*;
 
+
 import static org.junit.Assert.*;
-import main.integration.Garage;
 import main.model.CardPayment;
 
 import org.junit.Test;
