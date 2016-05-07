@@ -11,7 +11,6 @@ import main.integration.Garage;
 
 /**
  * This class tests if the garage is working, which includes the display and the garage door.
- *
  */
 public class GarageTest {
 

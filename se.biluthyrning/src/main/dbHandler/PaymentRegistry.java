@@ -2,14 +2,15 @@ package main.dbHandler;
 
 import main.model.Receipt;
 
+/**
+ * A pseudo payment registry.
+ */
 class PaymentRegistry {
 	
 	/**
 	 * Constructor for <code>PaymentRegistry</code>.
 	 */
-	PaymentRegistry(){
-		
-	}
+	PaymentRegistry(){}
 	
 	/**
 	 * Searches the database for a previous purchase.

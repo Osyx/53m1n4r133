@@ -10,6 +10,9 @@ import org.junit.Test;
 import main.model.InspectionResult;
 import main.model.ReportDTO;
 
+/**
+ * Test class for the inspection results.
+ */
 public class InspectionResultTest {
 
 	/**

@@ -7,8 +7,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * @author Joakim
- *
+ * Test class for the External Inspection Database.
  */
 public class ExternalInspectionDatabaseTest {
 

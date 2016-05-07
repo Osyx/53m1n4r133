@@ -11,8 +11,7 @@ import main.model.CardPayment;
 import org.junit.Test;
 
 /**
- * @author Silver
- *
+ * Test class for the card payment.
  */
 public class CardPaymentTest {
 

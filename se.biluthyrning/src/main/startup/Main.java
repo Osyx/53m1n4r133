@@ -5,6 +5,9 @@ import main.dbHandler.RegistryCreator;
 import main.integration.*;
 import main.view.View;
 
+/**
+ * The main class which starts the whole system and keeps it going.
+ */
 public class Main {
 	public static void main(String[] args){
 		RegistryCreator registryCreator = new RegistryCreator();
@@ -16,6 +19,5 @@ public class Main {
 		
 		while(true)
 			view.doSomething();
-		
 	}
 }

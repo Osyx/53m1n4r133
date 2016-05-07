@@ -1,8 +1,7 @@
 package main.dbHandler;
+
 /**
- * 
  * This class serves as a class creator for the two registers containing payments and inspections
- *
  */
 public class RegistryCreator {
 	private PaymentRegistry paymentRegistry;

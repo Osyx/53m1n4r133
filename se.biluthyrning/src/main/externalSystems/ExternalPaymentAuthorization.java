@@ -1,14 +1,12 @@
 package main.externalSystems;
 
 import main.model.PaymentDTO;
+
 /**
- * 
  * This class serves as a pseudo payment authorizer that deems
  * every transaction as correct.
- *
  */
 public class ExternalPaymentAuthorization {
-	
 	
 	/**
 	 * 

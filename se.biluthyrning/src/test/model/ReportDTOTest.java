@@ -12,6 +12,9 @@ import org.junit.Test;
 
 import main.model.ReportDTO;
 
+/**
+ * Test class for the report DTO.
+ */
 public class ReportDTOTest {
 
 	/**

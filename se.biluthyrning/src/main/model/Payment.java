@@ -22,7 +22,6 @@ public class Payment {
 		
 		if (paymentDetails.getCard() == true) {
 			setPaymentSuccessful(paymentDetails);
-
 		}
 	}
 	

@@ -1,5 +1,8 @@
 package main.model;
 
+/**
+ * Creates the inspection result from an ReportDTO.
+ */
 public class InspectionResult {
 	
 	InspectionResult inspectionResult;

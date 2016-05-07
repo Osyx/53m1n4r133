@@ -1,6 +1,9 @@
 package main.model;
 import java.util.*;
 
+/**
+ * The inspection class contains the Inspection object and functions for creating an inspection.
+ */
 public class Inspection {
 	private int cost = 0;
 	private String regnr;

@@ -9,8 +9,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * Test Class for ExternalPaymentAuthorization
- *
+ * Test Class for External Payment Authorization.
  */
 public class ExternalPaymentAuthorizationTest {
 

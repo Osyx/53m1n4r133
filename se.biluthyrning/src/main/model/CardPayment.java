@@ -1,4 +1,5 @@
 package main.model;
+
 /*
  * This class serves the purpose of handling cardpayments, as well
  * as the interaction with the ExternalPaymentAuthorization.
@@ -21,7 +22,8 @@ public class CardPayment {
 	public boolean getApproval() {
 		return this.approval;
 	}
-	/*
+	
+	/**
 	 * This method serves as the interaction method with the ExternPaymentAuthorization
 	 * and checks whether or not it is approves the card details the customer has
 	 * provided.
@@ -29,8 +31,7 @@ public class CardPayment {
 	 * 		   <code>false</code> if the payment request is denied.
 	 */
 	private boolean approvePayment(PaymentDTO paymentDetails) {
-		return main.externalSystems.ExternalPaymentAuthorization.authorizePayment(paymentDetails);
-		
+		return main.externalSystems.ExternalPaymentAuthorization.authorizePayment(paymentDetails);		
 	}
 
 	/**

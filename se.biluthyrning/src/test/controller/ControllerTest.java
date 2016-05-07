@@ -18,6 +18,9 @@ import main.model.Payment;
 import main.model.PaymentDTO;
 import main.model.ReportDTO;
 
+/**
+ * Test class for the controller.
+ */
 public class ControllerTest {
 
 	/**

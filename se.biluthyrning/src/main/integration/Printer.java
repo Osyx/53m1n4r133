@@ -3,14 +3,16 @@ package main.integration;
 import main.model.InspectionResult;
 import main.model.Receipt;
 
+/**
+ * Contains the constructor for the object Printer and also the methods for printing.
+ */
 public class Printer {
 	boolean printed = false;
 	/**
 	 * Constructor for <code>Printer</code>.
 	 */
-	public Printer(){
-		
-	}
+	public Printer(){}
+	
 	/**
 	 * Sends the argument to the printer.
 	 * @param obj the object of type <code>InspectionResult</code> we want to print.

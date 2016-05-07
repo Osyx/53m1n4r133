@@ -9,6 +9,9 @@ import main.model.Payment;
 import main.model.PaymentDTO;
 import main.model.ReportDTO;
 
+/**
+ * The view class which handels all of the UI:s function calls.
+ */
 public class View {
 	
 	List<String> resultList = new ArrayList<>();

@@ -13,8 +13,7 @@ import main.model.PaymentDTO;
 import main.model.Receipt;
 
 /**
- * @author Silver
- *
+ * Test class for the receipt.
  */
 public class ReceiptTest {
 

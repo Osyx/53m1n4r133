@@ -1,5 +1,8 @@
 package main.integration;
 
+/**
+ * Contains the constructor for the Garagedoor object and relevant methods for opening and closing the door.
+ */
 class Garagedoor {
 	/**
 	 * Contains the current status of the garage door.
@@ -17,9 +20,8 @@ class Garagedoor {
 	/**
 	 * Constructor for <code>Garagedoor</code>.
 	 */
-	Garagedoor(){
-		
-	}
+	Garagedoor(){}
+	
 	/**
 	 * Closes the door.
 	 */

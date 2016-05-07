@@ -11,7 +11,9 @@ import main.model.PaymentDTO;
 
 import org.junit.Test;
 
-
+/**
+ * Test class for the payment DTO.
+ */
 public class PaymentDTOTest {
 
 	/**

@@ -1,6 +1,9 @@
 package main.externalSystems;
 import java.util.*;
 
+/**
+ * A pseudo external database containing inspection instructions.
+ */
 public class ExternalInspectionDatabase {
 	static List<String> inspectionObjects;
 	

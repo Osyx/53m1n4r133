@@ -1,5 +1,8 @@
 package main.integration;
 
+/**
+ * Contains the constructor for the Display and relevant methods for increasing the number on the display. 
+ */
 class Display {
 	/**
 	 * <code>currentNumber</code> contains the value shown on the display.
@@ -9,9 +12,7 @@ class Display {
 	/**
 	 * Constructor for <code>Display</code>.
 	 */
-	Display(){
-		  
-	}
+	Display(){}
 	
 	/**
 	 * Displays the next number on the <code>Display</code>.

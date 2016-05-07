@@ -9,6 +9,9 @@ import main.model.PaymentDTO;
 import main.model.Receipt;
 import main.model.ReportDTO;
 
+/**
+ * The controller class which handels all calls from the view and converts them into method calls for the model.
+ */
 public class Controller {
 	RegistryCreator registryCreator;
 	Printer printer;
