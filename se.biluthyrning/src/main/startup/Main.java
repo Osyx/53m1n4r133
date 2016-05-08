@@ -18,6 +18,6 @@ public class Main {
 		
 		
 		while(true)
-			view.doSomething();
+			view.handleUI();
 	}
 }

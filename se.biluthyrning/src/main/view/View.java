@@ -26,7 +26,7 @@ public class View {
 	 * This method represents the pseudo graphical interface through which the user interacts
 	 * with the program.
 	 */
-	public void intiateUserInterface(){
+	public void handleUI(){
 		System.out.println("INITIATING CAR INSPECTION");
 		System.out.println("\nTime for a new customer?");
 		userInput.nextLine();
