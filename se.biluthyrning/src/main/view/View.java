@@ -42,7 +42,7 @@ public class View {
 		System.out.println("\nPAYMENT");
 		startPayment();
 		
-		System.out.println("\nWhat�s the result?");
+		System.out.println("\nWhat is the result?");
 		handleResult(makeNewReport());
 		
 		System.out.println();
