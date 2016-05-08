@@ -9,8 +9,8 @@ public class Inspection {
 	private String regnr;
 	List <String> inspectionList;
 	/**
-	 * 
-	 * @param regnr
+	 * <code>Inspection</code> will represent the inspection of the car with the costs and things to inspect.
+	 * @param regnr is the registration number of the car being inspected.
 	 * Constructor for inspection object
 	 */
 	public Inspection (String regnr) {
@@ -34,24 +34,51 @@ public class Inspection {
 		return costOfInspection;
 		
 	}
+	
+	/**
+	 * 
+	 * @return will return the cost of the inspection.
+	 */
 	public int getCost() {
 		return cost;
 	}
 	
+	/**
+	 * <code>setCost</code>will set the cost of the inspection.
+	 * @param cost
+	 */
 	private void setCost(int cost) {
 		this.cost = cost;
 	}
+	
+	/**
+	 * 
+	 * @return will return the regnumber of the inspection.
+	 */
 	public String getRegnr() {
 		return regnr;
 	}
+	
+	/**
+	 * <code>setRegnr</code> will set the regnumber of the inspection.
+	 * @param regnr
+	 */
 	private void setRegnr(String regnr) {
 		this.regnr = regnr;
 	}
 
+	/**
+	 * 
+	 * @return will return the Inspection List.
+	 */
 	public List<String> getInspectionList() {
 		return inspectionList;
 	}
 
+	/**
+	 * <code>setInspectionList</code> will set the new inspection list.
+	 * @param inspectionList will return the new inspection list.
+	 */
 	public void setInspectionList(List<String> inspectionList) {
 		this.inspectionList = inspectionList;
 	}
