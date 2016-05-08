@@ -19,8 +19,11 @@ public class View {
 	public View(Controller controller) {
 		this.controller = controller;
 	}	
-	
-	public void doSomething(){
+	/**
+	 * This method represents the pseudo graphical interface through which the user interacts
+	 * with the program.
+	 */
+	public void intiateUserInterface(){
 		System.out.println("INITIATING CAR INSPECTION");
 		System.out.println("\nTime for a new customer?");
 		userInput.nextLine();
@@ -42,16 +45,25 @@ public class View {
 		System.out.println();
 		
 	}
-	
+	/**
+	 * This method is responsible for letting the system know we are ready for
+	 * a new customer, which means the garage door will open and a the number
+	 * on the display will increase by one
+	 */
 	public void nextQueueNumber(){
 		controller.nextQueueNumber();
 	}
-	
+	/**
+	 * This method is responsible for closing the garage door
+	 */
 	public void closeDoor(){
 		controller.closeDoor();
 	}
-	
-	public void handleResult(ReportDTO reportDTO){
+	/**
+	 * 
+	 * @param reportDTO
+	 */
+	private void handleResult(ReportDTO reportDTO){
 		controller.handleResult(reportDTO);
 	}
 	
@@ -67,7 +79,12 @@ public class View {
 		return reportDTO;
 	}
 	
-	
+	/**
+	 * This method is responsible for starting a new payment from 
+	 * the customer. In this case we have created an imaginary customer
+	 * which would in the reals system be replaced by the information
+	 * provided by the point of sale terminal.
+	 */
 	private void startPayment(){
 		boolean card = true;
 		int amount = 100;
@@ -91,7 +108,18 @@ public class View {
 		if(payment.isPaymentSuccessful() == true)	System.out.println("Payment successful.\n");
 		else	System.out.println("Payment unsuccessful.");
 	}
-	
+	/**
+	 * This method creates a data transfer object that can
+	 * carry the payment information through the system.
+	 * @param card whether or not the customer is paying with a credit card or not
+	 * @param amount The amount the customer is paying for the inspection
+	 * @param cardNumber the Card Number of the customer's credit card
+	 * @param cvc the cvc code beloning to the credit card
+	 * @param expiry the expiry date of the credit card
+	 * @param code the code for the customer's card
+	 * @param cardHolder the name of the owner of the credit card
+	 * @return A DTO containing all the information relevant to the payment
+	 */
 	private PaymentDTO makePaymentDTO(Boolean card, int amount, String cardNumber, int cvc, int expiry, int code, String cardHolder){
 		PaymentDTO currentPayment = new PaymentDTO(card, amount, cardNumber, cvc, expiry, code, cardHolder);
 		
