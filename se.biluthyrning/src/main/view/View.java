@@ -63,13 +63,18 @@ public class View {
 		controller.closeDoor();
 	}
 	/**
-	 * 
-	 * @param reportDTO
+	 * This method is responsible for saving the reportDTO in a report format and then print it.
+	 * @param reportDTO The information we want to add to the, to be, printed report.
 	 */
 	private void handleResult(ReportDTO reportDTO){
 		controller.handleResult(reportDTO);
 	}
 	
+	/**
+	 * This method is responsible for making the reportDTO and does so by adding instructions one by one
+	 * from the the database and then asks the instructor for the result for each one of them.
+	 * @return reportDTO The <code>ReportDTO</code> that contains the results for the inspection.
+	 */
 	private ReportDTO makeNewReport(){
 		int listIndex = 0;
 		for(int i = inspection.getInspectionList().size() ; i > 0 ; i--){
