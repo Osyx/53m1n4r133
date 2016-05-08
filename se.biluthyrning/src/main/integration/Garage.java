@@ -32,11 +32,19 @@ public class Garage {
 		garageDoor.openGarageDoor();
 		display.displayNextNumber();
 	}
-	
+	/**
+	 * This method gives the status of the door.
+	 * @return <code>True</code> if the door is open, <code>False</code> if it is closed
+	 * 		
+	 */
 	public boolean getCurrentState(){
 		return garageDoor.getCurrentState();
 	}
 	
+	/**
+	 * This method gives the current number shown on the display
+	 * @return the <code>currentNumber</code> of the display.
+	 */
 	public int getCurrentNumber(){
 		return display.getCurrentNumber();
 	}
