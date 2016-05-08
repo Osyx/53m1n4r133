@@ -32,6 +32,10 @@ public class Printer {
 		printed = true;
 	}
 	
+	/**
+	 * 
+	 * @return Whether or not the document has been printed
+	 */
 	public boolean isPrinted() {
 		return printed;
 	}
