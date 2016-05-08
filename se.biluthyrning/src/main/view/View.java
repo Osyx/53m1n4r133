@@ -10,7 +10,7 @@ import main.model.PaymentDTO;
 import main.model.ReportDTO;
 
 /**
- * The view class which handels all of the UI:s function calls.
+ * The view class which handles all of the UI:s function calls.
  */
 public class View {
 	
