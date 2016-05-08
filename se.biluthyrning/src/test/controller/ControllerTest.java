@@ -1,6 +1,3 @@
-/**
- * 
- */
 package test.controller;
 
 import static org.junit.Assert.*;
